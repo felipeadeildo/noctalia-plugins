@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "scheme": {
+      "label": "Paleta",
+      "description": "Como a cor da capa vira uma paleta completa. Sistema segue o esquema de wallpaper do Noctalia. Capas em preto e branco sempre ganham uma paleta neutra.",
+      "system": "Sistema",
+      "vibrant": "Vibrante",
+      "tonal_spot": "Tonal Spot",
+      "content": "Content",
+      "fruit_salad": "Fruit Salad",
+      "rainbow": "Rainbow",
+      "monochrome": "Monocromático",
+      "faithful": "Fiel",
+      "soft": "Suave",
+      "muted": "Apagado",
+      "dysfunctional": "Dysfunctional"
+    },
+    "hold": {
+      "label": "Quando a música para",
+      "description": "Quanto tempo as cores do álbum ficam depois de pausar, antes de voltar a paleta anterior",
+      "now": "Voltar na hora",
+      "s10": "Depois de 10 segundos",
+      "s30": "Depois de 30 segundos",
+      "m1": "Depois de 1 minuto",
+      "m5": "Depois de 5 minutos",
+      "close": "Só quando o player fechar"
+    },
+    "delay_ms": {
+      "label": "Atraso de atualização (ms)",
+      "description": "Quanto tempo a faixa precisa ficar estável antes da paleta mudar"
+    },
+    "ignore_players": {
+      "label": "Players ignorados",
+      "description": "Nomes de player do playerctl que nunca mudam o tema, por exemplo chromium"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+id           = "felipeadeildo/music-theme"
+name         = "Music Theme"
+version      = "1.0.0"
+plugin_api   = 43
+author       = "felipeadeildo"
+license      = "MIT"
+icon         = "palette"
+description  = "Themes the shell and your apps from the album art of the track that is playing. The wallpaper stays as it is."
+tags         = ["theme", "music", "mpris", "palette"]
+dependencies = ["playerctl"]
+
+[[setting]]
+key             = "scheme"
+type            = "select"
+label_key       = "settings.scheme.label"
+description_key = "settings.scheme.description"
+default         = "system"
+options = [
+  { value = "system",         label_key = "settings.scheme.system" },
+  { value = "vibrant",        label_key = "settings.scheme.vibrant" },
+  { value = "m3-tonal-spot",  label_key = "settings.scheme.tonal_spot" },
+  { value = "m3-content",     label_key = "settings.scheme.content" },
+  { value = "m3-fruit-salad", label_key = "settings.scheme.fruit_salad" },
+  { value = "m3-rainbow",     label_key = "settings.scheme.rainbow" },
+  { value = "m3-monochrome",  label_key = "settings.scheme.monochrome" },
+  { value = "faithful",       label_key = "settings.scheme.faithful" },
+  { value = "soft",           label_key = "settings.scheme.soft" },
+  { value = "muted",          label_key = "settings.scheme.muted" },
+  { value = "dysfunctional",  label_key = "settings.scheme.dysfunctional" },
+]
+
+[[setting]]
+key             = "hold"
+type            = "select"
+label_key       = "settings.hold.label"
+description_key = "settings.hold.description"
+default         = "30"
+options = [
+  { value = "0",   label_key = "settings.hold.now" },
+  { value = "10",  label_key = "settings.hold.s10" },
+  { value = "30",  label_key = "settings.hold.s30" },
+  { value = "60",  label_key = "settings.hold.m1" },
+  { value = "300", label_key = "settings.hold.m5" },
+  { value = "-1",  label_key = "settings.hold.close" },
+]
+
+[[setting]]
+key             = "delay_ms"
+type            = "int"
+label_key       = "settings.delay_ms.label"
+description_key = "settings.delay_ms.description"
+default         = 500
+min             = 0
+max             = 5000
+
+[[setting]]
+key             = "ignore_players"
+type            = "string_list"
+label_key       = "settings.ignore_players.label"
+description_key = "settings.ignore_players.description"
+default         = []
+
+[[service]]
+id    = "service"
+entry = "service.luau"

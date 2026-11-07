@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "pci": {
+      "label": "Endereço PCI",
+      "description": "Endereço PCI da GPU, por exemplo 0000:03:00.0. Descubra com: readlink -f /sys/class/drm/card*/device"
+    },
+    "label": {
+      "label": "Rótulo",
+      "description": "Texto antes do uso, por exemplo 680M"
+    },
+    "interval": {
+      "label": "Intervalo de atualização (ms)",
+      "description": "De quanto em quanto tempo a placa é lida"
+    },
+    "hide_when_asleep": {
+      "label": "Esconder enquanto dorme",
+      "description": "Tira o widget da barra enquanto a GPU está em runtime suspend, então ele só aparece quando a GPU acorda"
+    }
+  }
+}

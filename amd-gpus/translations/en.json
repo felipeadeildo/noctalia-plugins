@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "pci": {
+      "label": "PCI address",
+      "description": "The GPU's PCI address, for example 0000:03:00.0. Find it with: readlink -f /sys/class/drm/card*/device"
+    },
+    "label": {
+      "label": "Label",
+      "description": "Text shown before the usage, for example 680M"
+    },
+    "interval": {
+      "label": "Update interval (ms)",
+      "description": "How often the card is read"
+    },
+    "hide_when_asleep": {
+      "label": "Hide while asleep",
+      "description": "Remove the widget from the bar while the GPU is in runtime suspend, so it only shows up when the GPU wakes"
+    }
+  }
+}

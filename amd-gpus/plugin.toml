@@ -1,0 +1,43 @@
+id          = "felipeadeildo/amd-gpus"
+name        = "AMD GPUs"
+version     = "1.0.0"
+plugin_api  = 23
+author      = "felipeadeildo"
+license     = "MIT"
+icon        = "gpu-usage"
+description = "One bar widget per AMD GPU, picked by PCI address. A GPU in runtime suspend is never read, so the dGPU stays asleep."
+tags        = ["gpu", "amd", "sysmon"]
+
+[[widget]]
+id    = "gpu"
+entry = "widget.luau"
+
+  [[widget.setting]]
+  key             = "pci"
+  type            = "string"
+  label_key       = "settings.pci.label"
+  description_key = "settings.pci.description"
+  default         = ""
+
+  [[widget.setting]]
+  key             = "label"
+  type            = "string"
+  label_key       = "settings.label.label"
+  description_key = "settings.label.description"
+  default         = "GPU"
+
+  [[widget.setting]]
+  key             = "hide_when_asleep"
+  type            = "bool"
+  label_key       = "settings.hide_when_asleep.label"
+  description_key = "settings.hide_when_asleep.description"
+  default         = false
+
+  [[widget.setting]]
+  key             = "interval"
+  type            = "int"
+  label_key       = "settings.interval.label"
+  description_key = "settings.interval.description"
+  default         = 2000
+  min             = 1000
+  max             = 10000
