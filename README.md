@@ -1,5 +1,7 @@
 # noctalia-plugins
 
+> Archived. I went back to Dux Shell, so these plugins are no longer maintained. They work on Noctalia 5.4.1.
+
 Plugins for [Noctalia](https://noctalia.dev) that I run on an ASUS ROG laptop with niri. Both target Noctalia 5.4.1 and later.
 
 | Plugin | What it does |
